@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<courses xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="courses.xsd">
+    <course id="c101">
+        <title>Mastering Full-Stack Web Development</title>
+        <instructor>Jane Doe</instructor>
+        <price>99.00</price>
+        <rating>4.8</rating>
+    </course>
+    <course id="c102">
+        <title>Advanced UI/UX Design Systems</title>
+        <instructor>John Smith</instructor>
+        <price>89.00</price>
+        <rating>4.9</rating>
+    </course>
+    <course id="c103">
+        <title>AI &amp; Machine Learning Foundations</title>
+        <instructor>Dr. Alan Turing</instructor>
+        <price>120.00</price>
+        <rating>4.7</rating>
+    </course>
+    <course id="c104">
+        <title>React.js Deep Dive</title>
+        <instructor>Sarah Johnson</instructor>
+        <price>75.00</price>
+        <rating>4.6</rating>
+    </course>
+</courses>

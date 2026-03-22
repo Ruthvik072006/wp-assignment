@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NexGen Academy | Authentication</title>
+    <link rel="stylesheet" href="styles.css">
+    <meta name="description" content="Login or register to access your courses.">
+</head>
+<body>
+
+    <header class="glass">
+        <nav>
+            <div class="logo">NexGen Academy</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="courses.html">Courses</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container" style="max-width: 600px; padding-top: 2rem;">
+        <div class="glass" style="padding: 3rem;">
+            
+            <div style="display: flex; gap: 1rem; margin-bottom: 2rem; border-bottom: 1px solid var(--border); padding-bottom: 1rem;">
+                <button id="tab-login" class="btn" style="background: none; color: white; font-size: 1.2rem; padding: 0;">Login</button>
+                <button id="tab-register" class="btn" style="background: none; color: var(--text-muted); font-size: 1.2rem; padding: 0;">Register</button>
+            </div>
+
+            <!-- Login Form -->
+            <form id="form-login">
+                <div class="form-group">
+                    <label for="login-email">Email Address</label>
+                    <input type="email" id="login-email" class="form-control" autocomplete="email">
+                    <div class="error-msg" id="login-email-error">Please enter a valid email.</div>
+                </div>
+                <div class="form-group">
+                    <label for="login-password">Password</label>
+                    <input type="password" id="login-password" class="form-control" autocomplete="current-password">
+                    <div class="error-msg" id="login-password-error">Password is required.</div>
+                </div>
+                <button type="submit" class="btn btn-primary" style="width: 100%; margin-top: 1rem;">Log In</button>
+            </form>
+
+            <!-- Register Form -->
+            <form id="form-register" style="display: none;">
+                <div class="form-group">
+                    <label for="reg-name">Full Name</label>
+                    <input type="text" id="reg-name" class="form-control" autocomplete="name">
+                    <div class="error-msg" id="reg-name-error">Name is required (min 3 characters).</div>
+                </div>
+                <div class="form-group">
+                    <label for="reg-email">Email Address</label>
+                    <input type="email" id="reg-email" class="form-control" autocomplete="email">
+                    <div class="error-msg" id="reg-email-error">Please enter a valid email.</div>
+                </div>
+                <div class="form-group">
+                    <label for="reg-password">Password</label>
+                    <input type="password" id="reg-password" class="form-control" autocomplete="new-password">
+                    <div class="error-msg" id="reg-password-error">Password must be at least 6 characters.</div>
+                </div>
+                <div class="form-group">
+                    <label for="reg-confirm">Confirm Password</label>
+                    <input type="password" id="reg-confirm" class="form-control" autocomplete="new-password">
+                    <div class="error-msg" id="reg-confirm-error">Passwords do not match.</div>
+                </div>
+                <button type="submit" class="btn btn-secondary" style="width: 100%; margin-top: 1rem; background: linear-gradient(135deg, var(--secondary), var(--primary)); border: none; padding: 0.8rem; border-radius: 50px; color: white; font-weight: 600; cursor: pointer;">Register Account</button>
+            </form>
+
+        </div>
+    </main>
+
+    <script src="auth.js"></script>
+
+</body>
+</html>
