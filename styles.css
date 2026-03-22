@@ -128,6 +128,7 @@ nav {
     color: white;
 }
 
+/* --- GRID SYSTEM IMPLEMENTATION (Part 2: CSS Styling, Requirement 4) --- */
 /* Layout Utilities (Grid System) */
 .container {
     max-width: 1200px;
